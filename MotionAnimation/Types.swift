@@ -87,7 +87,12 @@ extension UIColor:MotionAnimatableProperty{
     return self.init(red: values[0], green: values[1], blue: values[2], alpha: values[3])
   }
   public func toCGFloatValues(_ values: inout [CGFloat]) {
-    self.getRed(&values[0], green: &values[1], blue: &values[2], alpha: &values[3])
+    var red: CGFloat = 0, green: CGFloat = 0, blue: CGFloat = 0, alpha: CGFloat = 0
+    self.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+    values[0] = red
+    values[1] = green
+    values[2] = blue
+    values[3] = alpha
   }
 }
 

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "MotionAnimation"
-  s.version          = "0.1.2"
+  s.version          = "0.2.0"
   s.summary          = "Lightweight animation library for UIKit in Swift"
 
   s.description      = <<-DESC
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = "https://github.com/lkzhao/MotionAnimation"
-  s.screenshots     = "https://github.com/lkzhao/MotionAnimation/blob/master/imgs/demo.gif?raw=true"
+  s.screenshots      = "https://github.com/lkzhao/MotionAnimation/blob/master/imgs/demo.gif?raw=true"
   s.license          = 'MIT'
   s.author           = { "Luke" => "lzhaoyilun@gmail.com" }
   s.source           = { :git => "https://github.com/lkzhao/MotionAnimation.git", :tag => s.version.to_s }
@@ -21,4 +21,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'MotionAnimation/*.swift'
+  s.swift_version = '4.2'
 end

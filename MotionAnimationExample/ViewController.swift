@@ -17,7 +17,7 @@ class ViewController: UIPageViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     self.dataSource = self;
-    self.setViewControllers([vcs[0]], direction: UIPageViewControllerNavigationDirection.forward, animated: true, completion: nil)
+    self.setViewControllers([vcs[0]], direction: UIPageViewController.NavigationDirection.forward, animated: true, completion: nil)
   }
   
   override var preferredStatusBarStyle: UIStatusBarStyle {
